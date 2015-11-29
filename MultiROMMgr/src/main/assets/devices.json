@@ -158,7 +158,8 @@
             "check_gpg": false,
             "ubuntu_touch": {
                 "enabled": false,
-                "base_url": ""
+                "base_url": "http://system-image.ubports.com",
+                "device": "bacon"
             },
             "devices": [
                 {
@@ -177,7 +178,7 @@
         },
         {
             "names": [ "falcon", "falcon_umts", "falcon_umtsds", "falcon_cdma", "falcon_retuaws", "falcon_gpe" ],
-            "manifest_url": "http://montamer.github.io/files/android/falcon/multirom/manifest.json",
+            "manifest_url": "http://sub77.github.io/files/android/falcon/multirom/manifest.json",
             "check_gpg": false,
             "ubuntu_touch": {
                 "enabled": false
@@ -199,7 +200,7 @@
         },
         {
              "names": [ "htc_m8", "m8", "m8ul", "m8whl", "m8wl", "m8spr", "m8vzw", "htc_m8whl", "htc_m8wl", "m8_ul", "m8_whl", "m8_wl" ],
-             "manifest_url": "http://alexandru-g.github.io/files/android/m8/multirom/manifest.json",
+             "manifest_url": "http://multirom-m8.github.io/manifest.json",
              "check_gpg": false,
              "ubuntu_touch": {
                  "enabled": false
@@ -220,8 +221,8 @@
              ]
         },
         {
-            "names": [ "m7", "m7_ul", "cm_m7", "m7gsm" ],
-            "manifest_url": "http://dzej1.github.io/android/m7/multirom/multirommgr/manifest.json",
+            "names": [ "m7", "m7_ul", "m7_u", "cm_m7", "m7gsm" ],
+            "manifest_url": "https://www.dropbox.com/s/hljo77wq2dpae5z/manifest_m7ul.json?dl=1",
             "check_gpg": false,
             "ubuntu_touch": {
                 "enabled": false
@@ -238,6 +239,50 @@
                 {
                     "name": "cache",
                     "path": "/dev/block/mmcblk0p36"
+                }
+            ]
+        },
+        {
+            "names": [ "m7wlv", "m7vzw" ],
+            "manifest_url": "https://www.dropbox.com/s/zc8hapqr3zurqim/manifest_m7wlv.json?dl=1",
+            "check_gpg": false,
+            "ubuntu_touch": {
+                "enabled": false
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/mmcblk0p34"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/mmcblk0p33"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/mmcblk0p36"
+                }
+            ]
+        },
+        {
+            "names": [ "m7wls", "m7spr" ],
+            "manifest_url": "https://www.dropbox.com/s/nwssuaja5w0uqks/manifest_m7wls.json?dl=1",
+            "check_gpg": false,
+            "ubuntu_touch": {
+                "enabled": false
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/mmcblk0p36"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/mmcblk0p35"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/mmcblk0p38"
                 }
             ]
         },
@@ -380,7 +425,30 @@
         },
         {
             "names": [ "z3", "D6603", "D6602", "D6633", "D6643" ],
-            "manifest_url": "http://multirom.myself5.de/leo/manifest.json",
+            "manifest_url": "http://multirom.myself5.de/z3/manifest.json",
+            "check_gpg": false,
+            "ubuntu_touch": {
+                "enabled": false,
+                "base_url": ""
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/FOTAKernel"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/boot"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/cache"
+                }
+            ]
+        },
+        {
+            "names": [ "z3c", "D5803", "D5833" ],
+            "manifest_url": "http://multirom.myself5.de/z3c/manifest.json",
             "check_gpg": false,
             "ubuntu_touch": {
                 "enabled": false,
@@ -444,6 +512,121 @@
                 {
                     "name": "cache",
                     "path": "/dev/block/platform/sdhci-tegra.3/by-name/CAC"
+                }
+            ]
+        },
+        {
+            "names": [ "armani" ],
+            "manifest_url": "http://thestrix.github.io/multirom/armani/manifest.json",
+            "check_gpg": false,
+            "ubuntu_touch": {
+                "enabled": false,
+                "base_url": ""
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/recovery"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/boot"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/cache"
+                }
+            ]
+        },
+        {
+            "names": [ "matissewifi", "matissewifiue" ],
+            "manifest_url": "http://sub77.github.io/files/android/matissewifi/multirom/manifest.json",
+            "check_gpg": false,
+            "ubuntu_touch": {
+                "enabled": false,
+                "base_url": ""
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/recovery"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/boot"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/cache"
+                }
+            ]
+        },
+        {
+            "names": [ "matisse3g" ],
+            "manifest_url": "http://sub77.github.io/files/android/matisse3g/multirom/manifest.json",
+            "check_gpg": false,
+            "ubuntu_touch": {
+                "enabled": false,
+                "base_url": ""
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/recovery"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/boot"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/cache"
+                }
+            ]
+        },
+        {
+            "names": [ "matisselte" ],
+            "manifest_url": "http://sub77.github.io/files/android/matisselte/multirom/manifest.json",
+            "check_gpg": false,
+            "ubuntu_touch": {
+                "enabled": false,
+                "base_url": ""
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/recovery"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/boot"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/cache"
+                }
+            ]
+        },
+        {
+            "names": [ "d851", "d855" ],
+            "manifest_url": "https://raw.githubusercontent.com/Eliminater74/eliminater74.github.com/master/Downloads/json/mr_g3.json",
+            "check_gpg": false,
+            "ubuntu_touch": {
+                "enabled": false,
+                "base_url": ""
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/recovery"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/boot"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/msm_sdcc.1/by-name/cache"
                 }
             ]
         }
